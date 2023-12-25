@@ -1,0 +1,54 @@
+body {
+        font-size: large;
+        font-family: monospace;
+        font-weight: bold;
+        background-color: #303030;
+        color: azure;
+    }
+ul.nvbr {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3f4668;
+}
+li.nvbr {
+float: left;
+}
+li.nvbr a {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li.nvbr a:hover {
+background-color: #1e2238;
+}
+li.nvbr#active {
+background-color: #9390b6;
+}
+div.infocard {
+        /*border: #9390b6 solid;*/
+        background-color: rgb(22, 20, 20);
+        color: azure;
+        padding: 30px;
+        margin: 30px 50px;
+}
+h1.cardtitle {
+        text-align: center;
+        font-weight: bolder;
+        background-color: azure;
+}
+span.ti {
+        
+        font-weight: bolder;
+        /*background-color: #7975a3;*/
+        color: azure;
+}
+img.photo {
+        float: right;
+        border: solid;
+        width: 200px;
+        height: 200px;
+}

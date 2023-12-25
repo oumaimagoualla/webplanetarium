@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planetarium</title>
+        <style>
+                a:link {
+                        color: slateblue;
+                }
+                a:hover {
+                        color: #9390b6;
+                }
+                body {
+                    font-size: large;
+                    font-family: monospace;
+                    font-weight: bold;
+                    background-color: #303030;
+                    color: azure;
+                }
+                h2 {
+                        background-color: #9390b6;
+                        color: azure;
+                        clear: both;
+                }
+        div.welcome {
+                float: right;
+                background-color: #aba7cf;
+                color: #303030;
+                padding: 30px;
+                margin: 50px;
+        }
+        img.sysmap {
+                position: relative;
+                left: 50px;
+        }
+        </style>
+</head>
+<body>
+        <div>
+        <h2>PLANETES MAJEURES</h2>
+        <img class="sysmap" src="https://media.istockphoto.com/id/1083270968/vector/the-model-of-the-solar-system.jpg?s=612x612&w=0&k=20&c=JQOIkUO6V95lBcWMm7tWghtvHeD0NETPji50LUfqBl8=" usemap="#solarsystem">
+        <map name="solarsystem">
+                <area shape="circle" coords="306,308,40" href="soleil.html" title="Soleil" onmouseover="c='Soleil'; choice();" onmouseleave="txtreset()">
+                <area shape="circle" coords="283,188,13" href="terre.html" title="Terre" onmouseover="c='Terre'; choice();" onmouseleave="txtreset()">
+                <area shape="circle" coords="300,174,3" href="lune.html" title="Lune" onmouseover="c='Lune'; choice();" onmouseleave="txtreset()">
+                <area shape="circle" coords="395,332,10" href="venus.html" title="Venus" onmouseover="c='Venus'; choice();" onmouseleave="txtreset()">
+                <area shape="circle" coords="245,272,7" href="mercure.html" title="Mercure" onmouseover="c='Mercure'; choice();" onmouseleave="txtreset()">
+                <area shape="circle" coords="267,447,15" href="mars.html" title="Mars" onmouseover="c='Mars'; choice();" onmouseleave="txtreset()">
+                <area shape="circle" coords="450,398,21" href="jupiter.html" title="Jupiter" onmouseover="c='Jupiter'; choice();" onmouseleave="txtreset()">
+                <area shape="circle" coords="385,123,17" href="saturne.html" title="Saturne" onmouseover="c='Saturne'; choice();" onmouseleave="txtreset()">
+                <area shape="circle" coords="98,401,16" href="uranus.html" title="Uranus" onmouseover="c='Uranus'; choice();" onmouseleave="txtreset()">
+                <area shape="circle" coords="146,109,19" href="neptune.html" title="Neptune" onmouseover="c='Neptune'; choice();" onmouseleave="txtreset()">
+        </map>
+        <div class="welcome" id="choix">
+                <p>
+                        Bienvenue ! <br>Choisissez une planète...
+                </p>
+                <script>
+                        defaultmsg="Bienvenue !<br>Choisissez une planète..."
+                        function choice()
+                        {
+                                document.getElementById("choix").innerHTML="Vous avez choisi: "+c
+                        }
+                        function txtreset()
+                        {
+                                document.getElementById("choix").innerHTML=defaultmsg; 
+                        }
+                </script>
+        </div>
+        <h2>PLANETES NAINES</h2>
+        <div></div>
+        </div>
+        <hr>
+        <p style="text-align: center;"><a href="sources.html">A PROPOS DU SITE/SOURCES</a></p>
+        
+</body>
+</html>
